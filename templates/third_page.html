@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compartible" content="ie=edge">
+<title>Welcome</title>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .grescore{
+        margin-left: 0px;
+        top: 425px; 
+        left: 70px;
+
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #000;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+    }
+    
+    .navbar a {
+      float: left;
+
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .navbar1 {
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+    }
+    .navbar1 a{
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    </style>
+    </head>
+    
+    
+<body background=url("predict.png")>
+
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.svg">
+                    EDUFIND
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="hero-content">
+                    <h1><center>Predict your chance</center></h1>
+                </div>
+                
+            </header>
+        </div>
+    </div>
+    <div class="body-container">
+        <p><center><form method="post" action="/predict">
+            <label>GREScore
+                <input type="num" class="grescore" id="GREScore" name="GREScore" required>
+            </label>
+            <label>TOEFL
+                <input type="num" id="TOEFL" name="TOEFL" required>
+            </label><br><br>
+            <label>University Ratings
+                <select type="num" id="Ratings" name="Ratings" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </label>
+            <label>SOP
+                <input type="num" id="SOP" name="SOP" required>
+            </label>
+            <label>LOR    
+                <input type="num" id="LOR" name="LOR" required>
+            </label> <br><br>
+            <label>CGPA
+                <input type="num" id="CGPA" name="CGPA" required>
+            </label>
+            <label>Research
+                <select type="num" id="Research" name="Research" required>
+                    <option>0</option>
+                    <option>1</option>
+                </select>
+            </label><br><br><br>
+            <button type="submit" id="submit" name="submit" style="width: 90px ; height: 30px; font-size: 18px">SUBMIT</button>
+        </form> </center></p>
+    </div>
+    <div class="navbar">
+        <a>Privacy Terms & Conditions</a>
+    </div>
+    <div class="navbar1">
+        <a>edufind2023@gmail.com</a>
+    </div>
