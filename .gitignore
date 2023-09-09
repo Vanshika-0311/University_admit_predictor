@@ -3,3 +3,6 @@ Ignore venv file
 
 Ignore pycache file
 ./__pycache__
+
+Ignore .ipynb_checkpoints
+/ipynb_checkpoints
